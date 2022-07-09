@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaqil Abdullah</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body id="bod">
+    <nav class="normal" id="normal">
+        <ul class="normal-menu" id="normal-menu">
+            <span class="menu-icon" id="menu-icon" onclick="show()"><i class="bx bx-menu"></i></span>
+            <a href="index.html" class="title" id="title">Aaqil Abdullah</a>
+        </ul>
+    </nav>
+
+    <aside class="sidebar" id="sidebar">
+        <nav class="navbar">
+            <span class="logo"><a href="index.html">Aaqil Abdullah</a></span>
+            <span class="close-icon" onclick="hide()"><i class="bx bx-x"></i></span>
+            <ul class="menu">
+                <li onclick="location.href='index.html'">
+                    <a><i class="bx bx-home"></i></a><a class="hyperlinks">Home</a>
+                </li>
+                <li onclick="location.href='#projects'">
+                    <a><i class="bx bx-book"></i></a><a class="hyperlinks">Projects</a>
+                </li>
+                <li onclick="location.href='#skills'">
+                    <a><i class="bx bx-laptop"></i></a><a class="hyperlinks">Skills</a>
+                </li>
+                <li>
+                    <a><i class="bx bx-info-circle"></i></a><a class="hyperlinks">About</a>
+                </li>
+                <li>
+                    <a><i class="bx bx-phone-call"></i></a><a class="hyperlinks">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="container" id="container">
+        <div class="heads">
+            <h1><span class="type"></span></h1>
+        </div>
+    </div>
+
+    <div class="animation">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+    <div class="projects" id="projects">
+        <div class="header">
+            <h1>My Work</h1>
+        </div>
+        <br>
+        <div class="grid" id="grid">
+            <div class="project1">
+                <img src="/img/bee.jpg" alt="Your browser does not support this image">
+                <h2>Buzzing News</h2>
+                <a href="https://buzzing-news.netlify.app" target="_blank">Visit</a>
+            </div>
+            <div class="project2">
+                <img src="/img/counter.jpg" alt="Your browser does not support this image">
+                <h2>Average Counter</h2>
+                <a href="https://average-marks-finder.netlify.app/" target="_blank">Visit</a>
+            </div>
+            <div class="project3">
+                <img src="/img/web.jpg" alt="Your browser does not support this image">
+                <h2>Web Courses</h2>
+                <a href="https://webdevcourses.netlify.app/" target="_blank">Visit</a>
+            </div>
+            <div class="project4">
+                <img src="/img/basketball.jpg" alt="Your browser does not support this image">
+                <h2>BasketBall Scorer</h2>
+                <a href="https://basketball-scoring.netlify.app/" target="_blank">Visit</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="skills" id="skills">
+        <div class="heads">
+            <br><br>
+            <h1>My Skills</h1>
+        </div>
+        <div class="wrapper">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="skill">
+                <p>HTML5</p>
+                <div class="skill-bar skill1">
+                    <span class="skill-count1">95%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <p>CSS3</p>
+                <div class="skill-bar skill2">
+                    <span class="skill-count2">75%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JAVASCRIPT</p>
+                <div class="skill-bar skill3">
+                    <span class="skill-count3">40%</span>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="about" id="about">
+            <div class="heads">
+                <h1>About Me</h1>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam optio culpa, reprehenderit fuga cumque
+                tempore repudiandae earum, suscipit dolorum rerum, aliquid nostrum? Laboriosam neque tempore
+                reprehenderit maiores unde deleniti pariatur.</p>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="typed.js"></script>
+        <script>
+            var typed = new Typed(".type", {
+                strings: ["Hello, <br> Welcome To My Website"],
+                typeSpeed: 60,
+                backSpeed: 1,
+                loop: true,
+            });
+
+
+        </script>
+</body>
+
+</html>
